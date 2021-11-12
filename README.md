@@ -1,27 +1,35 @@
-# KeepClone
+# Keep-Clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+Keep-Clone como su nombre lo indica, es una aplicación web de notas similar a Google Keep. La aplicación cuenta con sistema de login, donde solo se pide email y contraseña. Las notas se pueden crear, editar y eliminar.
 
-## Development server
+## Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Ingrese a la dirección: https://keep-clone-399f7.web.app/ para ver una demostración del proyecto.
 
-## Code scaffolding
+## Uso del proyecto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Pre-requisitos
 
-## Build
+Se necesita tener instalado:
+``` Node.js``` 
+``` Angular CLI``` 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Instalación
 
-## Running unit tests
+Para tener el proyecto funcionando, se deben ejecutar los siguientes comandos dentro de la carpeta del mismo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+node install npm
+```
 
-## Running end-to-end tests
+Luego, se debe configurar el archivo `enviroments.ts` con las credenciales de firebase. Una vez configurado, se puede iniciar el proyecto con el comando `ng serve` y acceder desde un navegador web a la dirección `http://localhost:4200/`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Construido con
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+El proyecto fue construido con las siguientes herramientas de desarrollo:
+
+* [Visual Studio Code](https://code.visualstudio.com) - Editor de codigo fuente 
+* [Angular](https://angular.io/) - Framework para aplicaciones web desarrollado en TypeScript
+* [Firebase](https://firebase.google.com/?hl=es) - Plataforma para el desarrollo de aplicaciones web y aplicaciones móviles
+* [AngularFire](https://github.com/angular/angularfire) - Librería oficial de Angular para Firebase
