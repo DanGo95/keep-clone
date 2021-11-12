@@ -1,0 +1,25 @@
+<div class="overflow-hidden">
+    <div class="row d-flex flex-column min-vh-100 justify-content-center align-items-center animate__animated animate__fadeInLeft">
+        <div class="col-md-8 col-sm-8 col-lg-4 ">
+            <form (ngSubmit)="login( loginForm )" #loginForm="ngForm">
+                <p class="fs-4 fw-bold text-uppercase text-center mb-5">iniciar sesión</p>
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control form-control-lg rounded-3 px-4 py-1" [(ngModel)]="usuario.email" [class.is-invalid]="loginForm.submitted && loginForm.controls['email'].errors" required email placeholder="example@example.com">
+                    <p *ngIf="loginForm.submitted && loginForm.controls['email'].errors" class="text-danger text-center animate__animated animate__bounceIn">El correo es obligatorio</p>
+                </div>
+                <div class="mb-3">
+                    <input type="password" name="password" class="form-control form-control-lg rounded-3 px-4 py-1" [(ngModel)]="usuario.password" [class.is-invalid]="loginForm.submitted && loginForm.controls['password'].errors" required minlength="6" placeholder="******">
+                    <p *ngIf="loginForm.submitted && loginForm.controls['password'].errors" class="text-danger text-center animate__animated animate__bounceIn">Al menos 6 caracteres</p>
+                </div>
+                <div class="form-check form-switch mb-3">
+                    <input [(ngModel)]="recordarme" class="form-check-input" type="checkbox" name="recordarme">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Recordar mi usuario</label>
+                    <a [routerLink]="['/registro']" class="d-flex justify-content-end purple text-decoration-none">¿No posees cuenta?</a>
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn purple-button p-3 fw-bold text-uppercase mt-3">ingresar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

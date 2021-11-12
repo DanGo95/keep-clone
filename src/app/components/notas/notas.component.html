@@ -1,0 +1,17 @@
+<div class="row container mx-auto mt-5">
+    <div class="col-md-4 col-lg-3" *ngFor="let nota of notas">
+        <div class="card m-1">
+            <div class="card-body" (click)="abrirModal(nota)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h5 class="card-title">{{ nota.titulo }}</h5>
+                <p class="card-text">{{ nota.cuerpo }}</p>
+            </div>
+            <div class="card-body">
+                <div class="row justify-content-end">
+                    <button (click)="eliminar(nota)" class="btn btn-outline-danger btn-circle">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

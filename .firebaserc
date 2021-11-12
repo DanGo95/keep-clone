@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "keep-clone-399f7": {
+      "hosting": {
+        "keep-clone": [
+          "keep-clone-399f7"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "keep-clone-399f7"
+  }
+}
