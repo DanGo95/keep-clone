@@ -4,7 +4,7 @@ Keep-Clone como su nombre lo indica, es una aplicación web de notas similar a G
 
 ## Demo
 
-Ingrese a la dirección: https://keep-clone-399f7.web.app/ para ver una demostración del proyecto.
+Ingrese a la dirección: https://keep-clone-399f7.web.app/ para ver una demostración del proyecto. Ingrese como email y password: demo@demo.com
 
 ## Uso del proyecto
 
