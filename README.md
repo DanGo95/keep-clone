@@ -19,7 +19,7 @@ Se necesita tener instalado:
 Para tener el proyecto funcionando, se deben ejecutar los siguientes comandos dentro de la carpeta del mismo
 
 ```
-node install npm
+npm install
 ```
 
 Luego, se debe configurar el archivo `enviroments.ts` con las credenciales de firebase. Una vez configurado, se puede iniciar el proyecto con el comando `ng serve` y acceder desde un navegador web a la dirección `http://localhost:4200/`.
